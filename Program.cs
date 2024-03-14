@@ -20,7 +20,7 @@ class Program
         string subscriptionId = Environment.GetEnvironmentVariable("SUBSCRIPTION_ID");
         string resourceGroupName = Environment.GetEnvironmentVariable("RESOURCE_GROUP_NAME");
         string factoryName = Environment.GetEnvironmentVariable("FACTORY_NAME");
-        string url = "https://management.azure.com/subscriptions/20791995-9ee9-44fd-8e81-f46527e4fadf/resourceGroups/ahc-prd-wu-datapipeline-ssis/providers/Microsoft.DataFactory/factories/ahprddpluwssisadf/queryPipelineRuns?api-version=2018-06-01";
+        string url = "https://management.azure.com/subscriptions/<subscriptionId>/resourceGroups/<resourcegroup>/providers/Microsoft.DataFactory/factories/<datafactoryname>/queryPipelineRuns?api-version=2018-06-01";
         if (string.IsNullOrEmpty(tenantId) || string.IsNullOrEmpty(clientId) || string.IsNullOrEmpty(clientSecret) ||
             string.IsNullOrEmpty(subscriptionId) || string.IsNullOrEmpty(resourceGroupName) || string.IsNullOrEmpty(factoryName))
         {
